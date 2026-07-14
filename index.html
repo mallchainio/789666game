@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>789666game</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:"Microsoft YaHei",Arial,sans-serif;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    overflow:hidden;
+}
+
+
+/* 背景光 */
+body::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    background:rgba(255,255,255,.15);
+    border-radius:50%;
+    top:-100px;
+    left:-100px;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    background:rgba(255,255,255,.1);
+    border-radius:50%;
+    bottom:-80px;
+    right:-80px;
+}
+
+
+.card{
+
+    width:90%;
+    max-width:420px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    color:white;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+}
+
+
+/* logo */
+.logo{
+
+    width:80px;
+    height:80px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#667eea;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+
+/* 加载圈 */
+
+.loader{
+
+    width:45px;
+    height:45px;
+
+    border:4px solid rgba(255,255,255,.3);
+
+    border-top-color:white;
+
+    border-radius:50%;
+
+    margin:25px auto;
+
+    animation:rotate 1s linear infinite;
+
+}
+
+
+@keyframes rotate{
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+
+
+.progress{
+
+    width:100%;
+
+    height:6px;
+
+    background:rgba(255,255,255,.3);
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+}
+
+
+.progress span{
+
+    display:block;
+
+    height:100%;
+
+    width:0%;
+
+    background:white;
+
+    border-radius:10px;
+
+    animation:load 3s linear forwards;
+
+}
+
+
+
+@keyframes load{
+
+    from{
+        width:0%;
+    }
+
+    to{
+        width:100%;
+    }
+
+}
+
+
+.small{
+
+    margin-top:15px;
+
+    font-size:14px;
+
+    opacity:.8;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="card">
+
+
+<div class="logo">
+🚀
+</div>
+
+
+<h2>
+正在跳转
+</h2>
+
+
+<p class="small">
+正在安全连接，请稍候...
+</p>
+
+
+<div class="loader"></div>
+
+
+<div class="progress">
+<span></span>
+</div>
+
+
+</div>
+
+
+
+<script>
+
+// 3秒后跳转
+setTimeout(function(){
+
+    window.location.href="https://www.2026789aa.com/app/?pid=635007";
+
+},3000);
+
+
+</script>
+
+
+</body>
+</html>
